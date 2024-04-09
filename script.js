@@ -5,7 +5,7 @@ let itemActive = 0;
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
 prev.onclick = function(){
-    changeActive((itemActive -1)%itemNum);
+    changeActive((2*itemActive -1)%itemNum);
 }
 next.onclick = function(){
     changeActive((itemActive +1)%itemNum);
